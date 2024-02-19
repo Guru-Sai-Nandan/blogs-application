@@ -24,7 +24,7 @@ const connectDB = async () => {
 dotenv.config()
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: "http://localhost:3004", credentials: true, optionsSuccessStatus: 200, }))
+app.use(cors({ origin: ["http://personal-blogs-application.onrender.com", "https://personal-blogs-application.onrender.com"], credentials: true, optionsSuccessStatus: 200, }))
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/posts', postRouter)
