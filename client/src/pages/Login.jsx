@@ -54,7 +54,8 @@ const Login = () => {
           <input
             onChange={(e) => setEmail(e.target.value)}
             className="w-full px-4 py-2 border-2 border-black outline-0 rounded-sm"
-            type="text"
+            type="email"
+            autoCapitalize="none"
             placeholder="Enter your email id"
           />
           <input

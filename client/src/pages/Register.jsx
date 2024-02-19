@@ -71,8 +71,9 @@ const Register = () => {
               setEmail(e.target.value);
             }}
             onBlur={validateEmail}
+            autoCapitalize="none"
             className={`w-full px-4 py-2 border-2 outline-0 rounded-sm border-black`}
-            type="text"
+            type="email"
             placeholder="Enter your email id"
           />
 
