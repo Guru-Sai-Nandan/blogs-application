@@ -2,6 +2,9 @@
 
 Welcome to Blogify, a robust web application built to serve as your personal blog platform. With a seamless blend of modern technologies, Blogify empowers users to create, edit, and share their thoughts through beautifully crafted blog posts. Dive into the world of expressive writing, engaging discussions, and personalized user experiences.
 
+# Demo Video:
+https://drive.google.com/file/d/1NIzexTvFDMsYbmCswOYNFUbwBrwmYRat/view?usp=drive_link
+
 ## Tech Stacks
 
 - **Frontend:** React, JavaScript, Tailwind CSS
