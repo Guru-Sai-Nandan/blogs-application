@@ -39,6 +39,7 @@ Welcome to Blogify, a robust web application built to serve as your personal blo
    git clone https://github.com/Guru-Sai-Nandan/blogs-application.git
 
 2. **Client Setup:**
+3. 
     cd client
    
     npm install
