@@ -22,7 +22,7 @@ const connectDB = async () => {
 }
 
 dotenv.config()
-app.use(cors({ origin: ["https://personal-blogs-application.onrender.com", "http://personal-blogs-application.onrender.com"], credentials: true, optionsSuccessStatus: 200, }))
+app.use(cors({ origin: ["*"], credentials: true, optionsSuccessStatus: 200, }))
 app.use(express.json())
 app.use(cookieParser())
 app.use('/api/auth', authRouter)
