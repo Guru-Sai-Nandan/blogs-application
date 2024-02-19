@@ -9,7 +9,7 @@ export function UserContextProvider({ children }) {
 
   useEffect(() => {
     getUser();
-  });
+  }, []);
 
   const getUser = async () => {
     try {
