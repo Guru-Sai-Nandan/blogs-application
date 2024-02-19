@@ -22,7 +22,11 @@ const connectDB = async () => {
 }
 
 dotenv.config()
-app.use(cors({ origin: ["https://nandanblogsapp.netlify.app/", "http://nandanblogsapp.netlify.app/"], credentials: true, optionsSuccessStatus: 200, }))
+app.use(cors({
+    origin: ["https://nandanblogsapp.netlify.app", "http://nandanblogsapp.netlify.app",
+        "http://localhost:3004", "https://blogs-application-nine.vercel.app/",
+        "http://blogs-application-nine.vercel.app/"], credentials: true, optionsSuccessStatus: 200,
+}))
 app.use(cookieParser(null, {
     sameSite: 'None',
 }));
