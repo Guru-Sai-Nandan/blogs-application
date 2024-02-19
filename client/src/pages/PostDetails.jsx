@@ -90,7 +90,7 @@ const PostDetails = () => {
           <Loader />
         </div>
       ) : (
-        <div className="px-4 md:px-[200px] mt-8 mb-32">
+        <div className="px-4 md:px-[200px] mt-8 mb-36">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <h1 className="text-2xl font-bold text-black md:text-3xl mb-4 md:mb-0">
               {post.title}

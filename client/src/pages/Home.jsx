@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="px-10 md:px-[190px] space-x-4">
+      <div className="px-10 md:px-[190px] space-x-4 mb-32">
         {loader ? (
           <div className="h-[40vh] flex justify-center items-center">
             <Loader />

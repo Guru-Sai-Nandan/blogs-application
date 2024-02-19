@@ -40,7 +40,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-6 md:px-[200px] py-4">
+      <div className="flex items-center justify-between px-6 md:px-[200px] py-4 bg-gray-100">
         <h1 className="text-lg md:text-xl font-bold ">
           <Link to="/">BLOG APP</Link>
         </h1>
@@ -48,22 +48,18 @@ const Login = () => {
           <Link to="/register">Register</Link>
         </h3>
       </div>
-      <div className="w-full flex items-center justify-center h-[80vh]">
-        <div className="flex flex-col justify-center items-center space-y-4 w-[45%] px-10 md:w[30%]">
+      <div className="flex flex-col items-center justify-center h-[80vh] px-4">
+        <div className="flex flex-col justify-center items-center space-y-4 w-full md:w-[60%] lg:w-[40%] px-4 md:px-10">
           <h1 className="text-xl font-bold text-left">Login to your account</h1>
           <input
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full px-4 py-2 border-2 border-black outline-0 rounded-sm"
             type="text"
             placeholder="Enter your email id"
           />
           <input
             onKeyDown={handleKeyPress}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            onChange={(e) => setPassword(e.target.value)}
             className="w-full px-4 py-2 border-2 border-black outline-0 rounded-sm"
             type="password"
             placeholder="Enter your password"
@@ -71,7 +67,7 @@ const Login = () => {
           <button
             onClick={handleLogin}
             className="w-full px-4 py-4 text-lg font-bold text-white bg-black rounded-lg
-         hover:bg-gray-500 hover:text-black"
+       hover:bg-gray-500 hover:text-black"
           >
             Login
           </button>
