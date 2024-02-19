@@ -40,12 +40,17 @@ Welcome to Blogify, a robust web application built to serve as your personal blo
 
 2. **Client Setup:**
     cd client
+   
     npm install
+
     npm start
    
-3. **Server Setup:**
+4. **Server Setup:**
+
    cd server
+
    npm install
+
    node index.js
 
 Open your browser and go to http://localhost:3004/
