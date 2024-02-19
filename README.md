@@ -32,6 +32,10 @@ Welcome to Blogify, a robust web application built to serve as your personal blo
 7. **User Profile Management:**
    - View, update, and delete your user profile for a personalized experience.
 
+8. **Toast Notifications:**
+   - Informative toast notifications for successful operations and error handling.
+
+     
 ## How to Run
 
 1. **Clone Repository:**
@@ -39,14 +43,14 @@ Welcome to Blogify, a robust web application built to serve as your personal blo
    git clone https://github.com/Guru-Sai-Nandan/blogs-application.git
 
 2. **Client Setup:**
-3. 
+
     cd client
    
     npm install
 
     npm start
    
-4. **Server Setup:**
+3. **Server Setup:**
 
    cd server
 
@@ -54,5 +58,5 @@ Welcome to Blogify, a robust web application built to serve as your personal blo
 
    node index.js
 
-Open your browser and go to http://localhost:3004/
+4. Open your browser and go to http://localhost:3004/
 
