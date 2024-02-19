@@ -13,7 +13,7 @@ const path = require('path')
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URL)
+        await mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
         console.log('successful connection')
     }
     catch (err) {
@@ -22,9 +22,9 @@ const connectDB = async () => {
 }
 
 dotenv.config()
+app.use(cors({ origin: ["https://personal-blogs-application.onrender.com", "http://personal-blogs-application.onrender.com"], credentials: true, optionsSuccessStatus: 200, }))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: ["https://personal-blogs-application.onrender.com", "http://personal-blogs-application.onrender.com"], credentials: true, optionsSuccessStatus: 200, }))
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/posts', postRouter)
