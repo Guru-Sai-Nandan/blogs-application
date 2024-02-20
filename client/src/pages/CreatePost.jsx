@@ -21,10 +21,12 @@ const CreatePost = () => {
   const navigate = useNavigate();
 
   const addCategory = () => {
-    let updatedCats = [...cats];
-    updatedCats.push(cat);
-    setCat("");
-    setCats(updatedCats);
+    if (cat !== "") {
+      let updatedCats = [...cats];
+      updatedCats.push(cat);
+      setCat("");
+      setCats(updatedCats);
+    }
   };
 
   const deleteCategory = (i) => {
